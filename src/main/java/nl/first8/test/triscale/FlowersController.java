@@ -38,10 +38,11 @@ public class FlowersController {
         return flowersService.getFlowers();
     }
 
+    @GET
     /**
      * Sub-resource locator method for {id}
      */
-    @Path("{id}")
+    @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Flower get(@PathParam("id") String id) {
         return flowersService.get(id);
