@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package nl.first8.test.triscale;
 
 import java.util.List;
@@ -19,11 +14,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-/**
- * REST Web Service
- *
- * @author gkok
- */
 @Path("/flowers")
 public class FlowersController {
     @Context
@@ -39,9 +29,6 @@ public class FlowersController {
     }
 
     @GET
-    /**
-     * Sub-resource locator method for {id}
-     */
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Flower get(@PathParam("id") String id) {
