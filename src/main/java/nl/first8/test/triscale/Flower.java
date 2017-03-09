@@ -1,9 +1,13 @@
 package nl.first8.test.triscale;
 
 public class Flower {
-    private final String id;
-    private final String name;
-    private final String color;
+    private String id;
+    private String name;
+    private String color;
+
+    Flower() {
+        // Here for Jackson
+    }
 
     public Flower(String id, String name, String color) {
         this.id = id;
