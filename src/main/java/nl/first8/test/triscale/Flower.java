@@ -5,7 +5,7 @@ public class Flower {
     private String name;
     private String color;
 
-    Flower() {
+    public Flower() {
         // Here for Jackson
     }
 
